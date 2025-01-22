@@ -36,39 +36,6 @@ export const singleProductBySlugQuery = `
 `
 
 
-// export const allProductsQuery = `
-//   *[_type == "product"]{
-//     "id": id,
-//     name,
-//     price,
-//     description,
-//     discountPercentage,
-//     isFeaturedProduct,
-//     stockLevel,
-//     category->{
-//       title
-//     },
-//     "image": imagePath
-//   }
-// `;
-
-
-// export const singleProductQuery = (id: string) => `
-//   *[_type == "product" && id == "${id}"]{
-//     "id": _id,
-//     name,
-//     price,
-//     description,
-//     discountPercentage,
-//     isFeaturedProduct,
-//     stockLevel,
-//     category->{
-//       title
-//     },
-//     "image": imagePath
-//   }
-// `;
-
 
 
 
