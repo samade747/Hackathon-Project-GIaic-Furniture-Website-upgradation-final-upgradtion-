@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import Image from "next/image";
 import { useCart } from "../../context/CartContext";
 
 
@@ -34,13 +35,13 @@ const MyCart: React.FC = () => {
                 {cart.map((item) => (
                   <tr key={item.id} className="border-b">
                     <td className="p-4 flex items-center gap-4">
-                      {/* <Image
-                        src={item.image || "/placeholder.jpg"} // Fallback if no image
+                      <Image
+                        src={item.image} 
                         alt={item.name}
                         width={80}
                         height={80}
                         className="rounded-md"
-                      /> */}
+                      />
                       <span>{item.name}</span>
                     </td>
                     <td className="p-4">Rs. {item.price.toLocaleString()}</td>
